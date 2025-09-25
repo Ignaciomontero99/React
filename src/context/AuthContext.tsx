@@ -12,6 +12,7 @@ interface AuthState {
    toker?: string;
    user?: User;
    errorMenssage?: string
+   isChecking?: boolean
 }
 
 interface User{
@@ -37,7 +38,7 @@ export const AuthProvider = ({ children }: PropsWithChildren) => {
 
     return (
         <AuthContext.Provider value ={{
-            status: status
+            isChecking: status === AuthStatus.CHECKING
         }}>
             {children}
         </AuthContext.Provider>
