@@ -8,6 +8,7 @@ import { Counter } from './components/Counter'
 import { AuthProvider } from './context/AuthContext'
 import { LoginPage } from './components/LoginPage'
 import { UsersPage } from './components/UsersPage'
+import { FormPages } from './components/FormPages'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <div className="flex-1 flex flex-col gap-6">
             <BasicTypes />
             <Counter />
+            <FormPages />
           </div>
           <div className="flex-1 flex flex-col gap-6">
             <ObjectLiterals />
