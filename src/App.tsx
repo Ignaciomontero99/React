@@ -7,6 +7,7 @@ import { BasicFunctions } from './typescript/BasicFunctions'
 import { Counter } from './components/Counter'
 import { AuthProvider } from './context/AuthContext'
 import { LoginPage } from './components/LoginPage'
+import { UsersPage } from './components/UsersPage'
 
 function App() {
   
@@ -29,6 +30,7 @@ function App() {
           </div>
           <div className="flex-1 flex flex-col gap-6">
             <BasicFunctions />
+            <UsersPage />
           </div>
         </div>
       </AuthProvider>
